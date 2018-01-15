@@ -15,7 +15,7 @@ return [0, 1].
 
 ## Solution
 
-1. 配对问题，第一想法就是Hash Table
+1. 配对问题，第一想法就是`Hash Table`
 
 	遍历一遍，将target-a和index(a)存入表中，遍历的过程中进行查找，若找到返回index（a）和当前index，若未找到返回{-1，-1}错误
 

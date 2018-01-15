@@ -7,7 +7,6 @@ using std::vector;
 using std::unordered_map;
 #include <algorithm>
 using std::sort;
-using std::find;
 
 class Solution {
 public:
