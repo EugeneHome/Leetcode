@@ -1,5 +1,4 @@
-#ifndef SOLUTION_H
-#define SOLUTION_H
+#pragma once
 
 #include <vector>
 using std::vector;
@@ -69,6 +68,3 @@ public:
 
 	}
 };
-
-
-#endif // !SOLUTION_H

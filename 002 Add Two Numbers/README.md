@@ -1,0 +1,37 @@
+## Description
+
+You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+## Example
+
+```
+Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+Output: 7 -> 0 -> 8
+Explanation: 342 + 465 = 807.
+```
+
+## Solution
+
+1. 配对问题，第一想法就是`Hash Table`
+
+	遍历一遍，将target-a和index(a)存入表中，遍历的过程中进行查找，若找到返回index（a）和当前index，若未找到返回{-1，-1}错误
+
+	复杂度O(n)
+
+2. 算法导论2.3-7习题原题
+
+	1. 复制nums至nums1,对nums1排序去重
+	2. 建立nums2={b:b=target-a,a∈nums1}
+	3. 对nums，nums2进行归并
+	4. 归并数组中连续出现两次的数即为所求数
+	5. 在nums中查找该二数位置
+
+	复杂度O(nlgn)
+
+3. 自然方法
+
+	从第1个数开始，在它之后到结尾的子数组中线性查找它的配对数，整个数组依次遍历即可找到所需二数
+
+	复杂度O(n^2)
